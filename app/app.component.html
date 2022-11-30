@@ -1,0 +1,105 @@
+<div class="calc-container">
+  <div class="calc-prev"> {{previousInput}}
+  </div>
+  <div class="calc-txArea"> {{currentInput}}
+  </div>
+  <div class="calc-body">
+
+    <div class="calc-op" (click)="pushUnaryOp('percent')">
+        %
+    </div>
+
+    <div class="calc-op" (click)="clear('CE')">
+      CE
+    </div>
+
+    <div class="calc-op" (click)="clear('C')">
+      C
+    </div>
+
+    <div class="calc-op" (click)="clear('X')">
+      ⌫
+    </div>
+
+    <div class="calc-op" (click)="pushUnaryOp('inv')">
+      1<sub >/x</sub>
+    </div>
+
+    <div class="calc-op" (click)="pushUnaryOp('square')">
+      x²
+    </div>
+
+    <div class="calc-op" (click)="pushUnaryOp('sqrt')">
+      √x
+    </div>
+
+    <div class="calc-op" style="font-size: 19pt" (click)="pushBinaryOp('/')">
+      ÷
+    </div>
+
+    <div class="calc-num" (click)="pushNum('7')">
+      7
+    </div>
+
+    <div class="calc-num" (click)="pushNum('8')">
+      8
+    </div>
+
+    <div class="calc-num" (click)="pushNum('9')">
+      9
+    </div>
+
+    <div class="calc-op" style="font-size: 19pt" (click)="pushBinaryOp('*')">
+      ×
+    </div>
+
+    <div class="calc-num" (click)="pushNum('4')">
+      4
+    </div>
+
+    <div class="calc-num" (click)="pushNum('5')">
+      5
+    </div>
+
+    <div class="calc-num" (click)="pushNum('6')">
+      6
+    </div>
+
+    <div class="calc-op" (click)="pushBinaryOp('-')">
+      —
+    </div>
+
+    <div class="calc-num" (click)="pushNum('1')">
+      1
+    </div>
+
+    <div class="calc-num" (click)="pushNum('2')">
+      2
+    </div>
+
+    <div class="calc-num" (click)="pushNum('3')">
+      3
+    </div>
+
+    <div class="calc-op" style="font-size: 19pt" (click)="pushBinaryOp('+')">
+      +
+    </div>
+
+    <div class="calc-num" style="font-size: 12pt" (click)="pushUnaryOp('+-')">
+      +/-
+    </div>
+
+    <div class="calc-num" (click)="pushNum('0')">
+      0
+    </div>
+
+    <div class="calc-num" (click)="pushNum('.')">
+      .
+    </div>
+
+    <div class="calc-eq" style="font-size: 19pt;" (click)="equal()">
+      =
+    </div>
+  </div>
+</div>
+
